@@ -1,0 +1,53 @@
+.nav
+  margin: 0
+  padding: 0.5rem 3rem
+  display: flex
+  position: sticky
+  align-items: center
+  height: 4rem
+  z-index: 10
+  background-color: $white
+  box-shadow: 0 5px 16px rgba(0,0,0, 0.1)
+  font-size: 1.5rem
+  overflow: hidden
+  .navigation-btn
+    cursor: pointer
+  .nav-item
+    float: left
+  i
+    color: $black
+    font-size: 2rem
+  h2
+    margin: 0 2rem
+  .search
+    font-family: sans-serif, FontAwesome
+    margin-left: 12rem
+    font-size: 1.5rem
+    width: 30rem
+    border: none
+    border-radius: 0.33rem
+    background-color: $grey
+    padding: 0.5rem 1rem
+  .nav-right
+    float: right
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: flex-end
+  i
+    margin: 0 2rem
+  @media screen and (max-width: 600px)
+    height: 2rem
+    font-size: 1rem
+    padding: 0.5rem 1rem
+    h2
+      margin: 0 1rem
+    .search
+      font-size: 1rem
+      margin: 0
+      width: 100px
+    i
+      font-size: 1rem
+      margin: 0 0.5rem
+    .nav-right
+      align-items: flex-end
