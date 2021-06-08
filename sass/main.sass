@@ -8,18 +8,6 @@
   font-size: 1rem
   font-weight: bold
 
-.div0
-  @include flex
-  @include dimensions(27rem, auto)
-  padding: 0
-  flex-wrap: wrap
-  flex-direction: column
-  width: 45%
-  @media screen and (max-width: 600px)
-    @include flex
-    @include dimensions(auto, auto)
-    margin: 1rem 0.5rem
-
 .refresh
   text-decoration: none
   position: absolute
@@ -58,6 +46,23 @@
     padding: 1rem 0
     align-items: center
 
+.earning
+  @include div0
+
+.report
+  @include div0
+
+.media
+  @include div0
+  padding: 1rem 0
+  align-content: space-between
+
+.analytics
+  @include div0
+
+.top
+  @include div0
+
 .new-orders
   @include div1($orange1)
 
@@ -72,17 +77,24 @@
 
 .web-traffic
   @include div2($white)
-  @include dimensions(20rem, 40%)
-  margin: 2rem
+  @include dimensions(23rem, 40%)
+  margin: 0 0.25rem 0 0
+  padding: 1rem
+  @media screen and (max-width: 600px)
+    margin-top: 2rem
 
 .user-data
   @include div2(transparent)
+  @include dimensions(20rem, 40%)
+  margin: 0 0rem 0 0.25rem
 
 .social-media
   @include div3
+  margin:  0.5rem 0 0 0
 
 .total-users
   @include div3
+  margin:  0 0 0.5rem 0
 
 .weekly-earning
   @include div4
@@ -168,14 +180,14 @@
   color: $white
   text-align: center
 .d-v
-  width: 42.66%
+  width: 30.66%
   height: 100%
   float: left
   border-top-left-radius: 5px
   border-bottom-left-radius: 5px
   background-color: $blue
 .o-s
-  width: 36.80%
+  width: 26.80%
   height: 100%
   float: left
   background-color: $green

@@ -11,8 +11,20 @@
   @media screen and (max-width: 600px)
     margin: 1rem
 
+@mixin div0
+  @include flex
+  @include dimensions(27rem, auto)
+  padding: 0
+  flex-wrap: wrap
+  flex-direction: column
+  width: 45%
+  @media screen and (max-width: 600px)
+    @include flex
+    @include dimensions(auto, auto)
+    margin: 1rem 0.5rem
+
 @mixin div1($backgroundColor)
-  @include dimensions(9.5rem, 40%)
+  @include dimensions(9.5rem, 42%)
   margin: 1rem 1.27rem
   padding: 1rem
   border-radius: 8px
@@ -32,8 +44,7 @@
   @include media
 
 @mixin div2($backgroundColor)
-  @include dimensions(21rem, 45%)
-  padding: 1rem
+  @include dimensions(23rem, 45%)
   border-radius: 8px
   display: inline-block
   background-color: $backgroundColor
@@ -43,8 +54,7 @@
       justify-content: center
 
 @mixin div3
-  @include dimensions(8.5rem, 86%)
-  margin: 0.5rem
+  @include dimensions(9.9rem, 110%)
   padding: 1rem
   border-radius: 8px
   display: inline-block
