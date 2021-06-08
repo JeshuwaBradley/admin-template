@@ -147,9 +147,39 @@ ul li {
   top: 1rem;
   cursor: pointer; }
 
-.icon1 {
+.fa-shopping-basket {
   font-size: 2rem;
+  width: 2rem;
   color: #01418b; }
+
+.fa-retweet {
+  font-size: 2rem;
+  width: 2rem;
+  color: #01418b; }
+
+.fa-user {
+  font-size: 2rem;
+  width: 2rem;
+  color: #01418b;
+  background-color: #8fb9f0;
+  padding: 0.5rem;
+  border-radius: 32px; }
+
+.fa-thumbs-up {
+  font-size: 2rem;
+  width: 2rem;
+  color: #01418b;
+  background-color: #8fb9f0;
+  padding: 0.5rem;
+  border-radius: 32px; }
+
+.fa-comments {
+  font-size: 2rem;
+  width: 2rem;
+  color: #01418b;
+  background-color: #8fb9f0;
+  padding: 0.5rem;
+  border-radius: 32px; }
 
 .inline {
   display: inline-block;
